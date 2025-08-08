@@ -1,7 +1,7 @@
 class Solution {
 public:
     double soupServings(int n) {
-        if(n>100000) return 1;
+        if(n>5000) return 1;
         int N = (n + 24) / 25;
         memory.assign(N + 1, vector<double>(N + 1, -1));
         double ans = ServingEachRound(N, N);;
